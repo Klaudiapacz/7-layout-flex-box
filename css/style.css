@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    color: white;
+}
+
+.menu {
+    background-color: red;
+    width: 100%;
+    height:50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.kontener {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    overflow: auto;
+}
+
+.artykul {
+    background-color: turquoise;
+    height: 33.33%;
+    margin: 0;
+    flex-basis: 100%;
+}
+
+
+
+/*  
+ */
+aside {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.right {
+    background-color: pink;
+    height: 33.33%;
+    flex-basis: 100%;
+}
+
+.left {
+    background-color: green;
+    height: 33.33%;
+    flex-basis:  100%;
+}
+
+.stopka {
+    background-color: rgb(143, 86, 143);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .menu {
+        height:100px ;
+    }
+
+    .artykul {
+        height: 50%;
+        flex-basis: 70%;
+    }
+
+    .right {
+        height: 50%;
+        flex-basis: 30%;
+    }
+    
+    .left {
+        height: 50%;
+        flex-basis:  100%;
+    }
+ }
+
+ @media (min-width:993px) {
+
+    .menu {
+        height:100px ;
+    }
+    .artykul {
+        height: 100%;
+        flex-basis: 50%;
+    }
+    
+    .right {
+        height: 100%;
+        flex-basis: 25%;
+    }
+    
+    .left {
+        height: 100%;
+        flex-basis: 25%;
+        order: -1;
+    }
+    
+    .stopka {
+        height: 100px;
+    }
+}
